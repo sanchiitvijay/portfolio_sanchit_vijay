@@ -1,0 +1,14 @@
+### Todo Items
+- [x] Loading for homescreen
+- [ ] Image loading for all images
+- [ ] Design and update for service
+- [ ] Update content for Works ( Both in mobile and desktop )
+- [ ] Add a component in mobile screen void
+- [ ] On click of work , Modal can be opened
+- [ ] Update Work Experience
+- [ ] Convert icons to iconify.react
+- [x] Codesplitting for mobile and desktop view
+- [ ] Remove unused or not required magicUI component
+- [ ] Add background or something
+- [ ] Add Cursor color shadow
+- [ ] Add pointer info

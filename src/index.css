@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Maison Neue Extended";
+  src: url("./assets/font/MaisonNeue-ExtendedBold.woff2") format("woff2"),
+    url("./assets/font/MaisonNeue-ExtendedBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue Extended";
+  src: url("./assets/font/MaisonNeue-ExtendedDemiBold.woff2") format("woff2"),
+    url("./assets/font/MaisonNeue-ExtendedDemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue Extended";
+  src: url("./assets/font/MaisonNeue-ExtendedLight.woff2") format("woff2"),
+    url("./assets/font/MaisonNeue-ExtendedLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue Extended";
+  src: url("./assets/font/MaisonNeue-ExtendedMedium.woff2") format("woff2"),
+    url("./assets/font/MaisonNeue-ExtendedMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apple Garamond";
+  src: url("./assets/font/applegaramond-italic-webfont.woff2") format("woff2"),
+    url("./assets/font/applegaramond-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  @apply font-maison;
+}
