@@ -11,12 +11,12 @@ import {
 import TechStack from "../core/TechStack";
 import WorkCard from "../core/WorkCard";
 import Services from "../core/Services";
-import SocialHandle from "../core/SocialHandle";
+import OtherCircular from "../core/OtherCircular";
 import Timeline from "rsuite/Timeline";
 import TimelineItem from "../common/TimelineItem";
 import content from "@/lib/constants";
 import InfoGraphics from "../core/InfoGraphics";
-import Quote from "../core/Quote";
+import Contact from "../core/Contact";
 import NameCard from "../core/NameCard";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
@@ -100,13 +100,11 @@ const LandingPageMd = () => {
         <div className="flex flex-col gap-4 h-[334px]">
           <div
             className="w-[264px] h-[64%] rounded-2xl gap-2 items-center "
-            onClick={onContactOpen}
           >
-            <Quote onContactOpen={onContactOpen} />
+            <Contact/>
           </div>
-          {isContactOpen && <ContactModal onContactClose={onContactClose} />}
           <div className=" w-[264px] h-[25%] rounded-2xl">
-            <SocialHandle />
+            <OtherCircular />
           </div>
         </div>
         <div className=" w-full h-[89%] rounded-2xl">

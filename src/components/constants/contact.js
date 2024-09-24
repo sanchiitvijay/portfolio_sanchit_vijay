@@ -1,12 +1,20 @@
-const contact = [
+const contactLink =[
     {
-        mobile: '+91 8445137008',
-        email: 'sanchiitvijay@gmail.com',
-        address: 'MSRIT, Mathtikere, Bengaluru, Karnataka, India 560054',
-        linkedin: 'https://www.linkedin.com/in/sanchitvijay/',
-        github: 'https://www.github.com/sanchiitvijay/',
-        twitter: 'https://www.twitter.com/sanchiitvijay/',
+        name:"Linkdin",
+        url:"https://www.linkedin.com/in/sanchiitvijay/",
+        logo:"simple-icons:linkedin"
+    },
+    {
+        name:"Github",
+        url:"https://github.com/sanchiitvijay/",
+        logo:"simple-icons:github"
+    },
+    {
+        name:"Twitter",
+        url:"https://twitter.com/sanchiitvijay/",
+        logo:"simple-icons:twitter"
     }
-]
+];
 
-export {contact};
+
+export {contactLink};

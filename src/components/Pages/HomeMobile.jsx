@@ -11,13 +11,13 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import TechStack from "../core/TechStack";
-import SocialHandle from "../core/SocialHandle";
+import SocialHandle from "../core/OtherCircular";
 import "rsuite/Timeline/styles/index.css";
 import TimelineItem from "../common/TimelineItem";
 import { Timeline } from "rsuite";
 import WorkExperience from "../core/Education";
 import content from "@/lib/constants";
-import Quote from "../core/Quote";
+import Quote from "../core/Contact";
 import { Icon } from "@iconify/react";
 
 const HomeMobile = () => {

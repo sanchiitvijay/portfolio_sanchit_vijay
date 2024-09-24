@@ -1,26 +1,76 @@
+import { Button, Divider, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from "@nextui-org/react";
+import { Icon } from "@iconify/react";
+import { contactLink } from "../constants/contact";
+
+
 const ContactModal = (props) => {
+
   return (
-    <div className="fixed inset-0 z-50 my-auto flex items-center justify-center backdrop-blur-sm bg-black/50">
-    <div className="relative inset-0 w-[360px] bg-zinc-950/90 md:w-[800px] rounded-lg p-6">
-      <div className="text-2xl text-center mb-4 text-white">Services</div>
-      <hr className="border-gray-700 mb-4" />
+    
+    <Modal
+    backdrop={"blur"}
+    isOpen={props?.isOpen}
+    onOpenChange={props?.onOpenChange}
+    className="w-[360px] bg-zinc-950/90 md:w-[1000px]"
+    hideCloseButton
+  >
+    <ModalContent>
+      {(onClose) => (
+        <>
+          <ModalHeader className="flex flex-col gap-1 text-2xl text-center">
+            Contacts
+          </ModalHeader>
 
-      <div className="p-4">
-        <p className="text-xs font-semibold italic md:text-sm text-gray-300">wdifvdn</p>
-        <p className="text-sm font-bold md:text-base text-lime-400">fdgbfn</p>
-      </div>
+          <Divider />
+          <ModalBody className="justify-center p-4">
+                <div className="">
+                  <div className="flex flex-row gap-3 mb-3">
+                    <Icon icon="mdi:phone" className="w-6 h-6" />
+                    <span>Mobile:</span>
+                    <span>+91 8445137008</span>
+                  </div>
+                  <div className="flex flex-row gap-3 mb-3">
+                    <Icon icon="mdi:email" className="w-5 h-5" />
+                    <span>Email:</span>
+                    <span>sanchiitvijay@gmail.com</span>
+                  </div>
+                  <div className="flex flex-row gap-3 mb-3">
+                    <Icon icon="ph:address-book-fill" className="w-8 h-8" />
+                    <span>Address:</span>
+                    <span>MSRIT, Mathtikere, Bengaluru, Karnataka, India 560054</span>
+                  </div>
+                  
+                  <Divider/>
+                    <div className="flex flex-row gap-3 mt-6 mx-auto place-content-center">
+                      {contactLink.map((link, index) => (
+                        <div key={index} className="flex flex-col gap-3">
+                          
+                          <Icon icon={link.logo} className="w-10 h-10 mx-auto" />
+                          <a href={link.url} target="_blank" rel="noreferrer" className="text-sm">
+                            {link.name}
+                          </a>
 
-      <div className="mt-4 flex justify-center">
-        <button
-          onClick={props?.onContactClose}
-          className="w-full px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded"
-        >
-          Close
-        </button>
-      </div>
-    </div>
-  </div>
+                        </div>
+                      ))}
+                      </div>
+                  </div>
+          </ModalBody>
+
+          <ModalFooter className="justify-center">
+            <Button
+              color="danger"
+              variant="flat"
+              onPress={onClose}
+              className="w-full"
+            >
+              Close
+            </Button>
+          </ModalFooter>
+        </>
+      )}
+    </ModalContent>
+  </Modal>
   )
 }
 
-export default ContactModal
+export default ContactModal;
