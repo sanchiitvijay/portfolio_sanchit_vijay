@@ -1,4 +1,4 @@
-import MyChip from "../Atoms/MyChip";
+import MyChip from "../common/MyChip";
 
 const Tags = () => {
   return (

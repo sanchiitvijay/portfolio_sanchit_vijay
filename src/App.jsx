@@ -31,7 +31,8 @@ function App() {
           />
         }
       >
-        {isMobile ? <LandingPageMobile /> : <LandingPageMd />}
+        {/* {isMobile ? <LandingPageMobile /> : <LandingPageMd />} */}
+        <LandingPageMd/>
       </Suspense>
     </div>
   );

@@ -1,4 +1,4 @@
-import { MyCard } from "../Atoms/MyCard";
+import { MyCard } from "../common/MyCard";
 import { CardBody, Image } from "@nextui-org/react";
 import climax from "@/assets/Pics/ClimaxFCx1.webp";
 

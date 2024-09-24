@@ -1,4 +1,4 @@
-import WorkItemComponent from "../Molecules/WorkItemComponent";
+import WorkItemComponent from "../core/WorkItemComponent";
 
 const WorksMobile = () => {
   return (

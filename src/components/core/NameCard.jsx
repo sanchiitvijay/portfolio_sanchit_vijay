@@ -1,9 +1,9 @@
-import NameTag from "../Atoms/NameTag";
-import ProPic from "../Atoms/ProPic";
-import CTA from "../Molecules/CTA";
-import MyChip from "../Atoms/MyChip";
+import NameTag from "../common/NameTag";
+import ProPic from "../common/ProPic";
+import CTA from "./CTA";
+import MyChip from "../common/MyChip";
 import Marquee from "../magicui/marquee";
-import { MyCard } from "../Atoms/MyCard";
+import { MyCard } from "../common/MyCard";
 
 const NameCard = () => {
   return (

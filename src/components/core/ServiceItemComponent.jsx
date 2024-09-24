@@ -1,5 +1,5 @@
-import { MyCard } from "../Atoms/MyCard";
-import { MyButton } from "../Atoms/MyButton";
+import { MyCard } from "../common/MyCard";
+import { MyButton } from "../common/MyButton";
 
 const ServiceItemComponent = ({
   header = "Web Development 🧑🏽‍💻",

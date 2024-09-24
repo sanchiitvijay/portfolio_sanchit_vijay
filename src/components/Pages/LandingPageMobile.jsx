@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavBar from "../Molecules/NavBar";
+import NavBar from "../core/NavBar";
 import { Route, Routes } from "react-router-dom";
 import HomeMobile from "./HomeMobile";
 import WorksMobile from "./WorksMobile";

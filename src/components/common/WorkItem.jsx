@@ -1,7 +1,8 @@
-import { Card, Image, CardFooter, Divider } from "@nextui-org/react";
+import { Card, Image, CardFooter } from "@nextui-org/react";
 import herocard from "@/assets/Pics/herocard.webp";
 
 const WorkItem = ({ name = "Project Name", desc = "description" }) => {
+  
   return (
     <Card isFooterBlurred className="border-none size-28 md:size-52">
       <Image

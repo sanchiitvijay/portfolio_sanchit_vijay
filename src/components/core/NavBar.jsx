@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { MyButton } from "../Atoms/MyButton";
-import { MyCard } from "../Atoms/MyCard";
+import { MyButton } from "../common/MyButton";
+import { MyCard } from "../common/MyCard";
 
 const NavBar = ({ clicked, setClicked }) => {
   const navigate = useNavigate();

@@ -1,5 +1,5 @@
 import { Chip, Skeleton } from "@nextui-org/react";
-import { MyCard } from "../Atoms/MyCard";
+import { MyCard } from "../common/MyCard";
 
 const WorkItemComponent = ({ Header, Tags, Description }) => {
   return (

@@ -1,4 +1,4 @@
-import { MyButton } from "../Atoms/MyButton";
+import { MyButton } from "../common/MyButton";
 
 const Cta = () => {
   return (

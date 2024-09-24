@@ -1,7 +1,7 @@
 import { CardBody, CardHeader } from "@nextui-org/react";
-import LogoMarquee from "../Atoms/LogoMarquee";
-import { MyCard } from "../Atoms/MyCard";
-import LogoMarqueeFull from "../Atoms/LogoMarqueeFull";
+import LogoMarquee from "../common/LogoMarquee";
+import { MyCard } from "../common/MyCard";
+import LogoMarqueeFull from "../common/LogoMarqueeFull";
 
 const TechStack = () => {
   return (

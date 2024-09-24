@@ -1,5 +1,5 @@
-import InfoGraphics from "../Molecules/InfoGraphics";
-import NameCard from "../Organisms/NameCard";
+import InfoGraphics from "../core/InfoGraphics";
+import NameCard from "../core/NameCard";
 import {
   Button,
   Divider,
@@ -10,14 +10,14 @@ import {
   ModalHeader,
   useDisclosure,
 } from "@nextui-org/react";
-import TechStack from "../Molecules/TechStack";
-import SocialHandle from "../Molecules/SocialHandle";
+import TechStack from "../core/TechStack";
+import SocialHandle from "../core/SocialHandle";
 import "rsuite/Timeline/styles/index.css";
-import TimelineItem from "../Molecules/TimelineItem";
+import TimelineItem from "../core/TimelineItem";
 import { Timeline } from "rsuite";
-import WorkExperience from "../Molecules/WorkExperience";
+import WorkExperience from "../core/WorkExperience";
 import content from "@/lib/constants";
-import Quote from "../Molecules/Quote";
+import Quote from "../core/Quote";
 import { Icon } from "@iconify/react";
 
 const HomeMobile = () => {

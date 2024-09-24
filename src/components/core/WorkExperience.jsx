@@ -8,13 +8,13 @@ const WorkExperience = ({ onOpen }) => {
       onPress={onOpen}
     >
       <span className="absolute bottom-50 left-0 right-0 text-center z-10 text-xl md:text-2xl text-white">
-        Work Experience
+        Education
       </span>
-      <img
+      {/* <img
         src={welcome}
         alt="A Scene from Fight Club"
         className="w-[100%] h-full object-cover brightness-100  "
-      />
+      /> */}
     </Button>
   );
 };
