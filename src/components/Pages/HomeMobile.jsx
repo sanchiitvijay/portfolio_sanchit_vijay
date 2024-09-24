@@ -13,9 +13,9 @@ import {
 import TechStack from "../core/TechStack";
 import SocialHandle from "../core/SocialHandle";
 import "rsuite/Timeline/styles/index.css";
-import TimelineItem from "../core/TimelineItem";
+import TimelineItem from "../common/TimelineItem";
 import { Timeline } from "rsuite";
-import WorkExperience from "../core/WorkExperience";
+import WorkExperience from "../core/Education";
 import content from "@/lib/constants";
 import Quote from "../core/Quote";
 import { Icon } from "@iconify/react";

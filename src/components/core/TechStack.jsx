@@ -3,12 +3,14 @@ import LogoMarquee from "../common/LogoMarquee";
 import { MyCard } from "../common/MyCard";
 import LogoMarqueeFull from "../common/LogoMarqueeFull";
 
-const TechStack = () => {
+const TechStack = (props) => {
   return (
+    <button onClick={props?.onOpen} className="w-full h-full">
+
     <MyCard
       color="zinc"
       className="h-[210px] w-36 items-center justify-center md:w-full md:h-full"
-    >
+      >
       <CardHeader className="px-0 py-0 mt-2 font-semibold justify-center text-xl md:text-2xl">
         TechStack
       </CardHeader>
@@ -17,6 +19,7 @@ const TechStack = () => {
         {<LogoMarqueeFull />}
       </CardBody>
     </MyCard>
+      </button>
   );
 };
 

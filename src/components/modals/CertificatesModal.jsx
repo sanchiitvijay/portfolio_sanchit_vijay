@@ -1,26 +1,86 @@
+import { Button, Divider, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from "@nextui-org/react";
+import { codingPlatforms, codingRating, certificates } from "../constants/certifi";
+import { Icon } from "@iconify/react";
+
 const CertificatesModal = (props) => {
   return (
     
-        <div className="fixed inset-0 z-50 my-auto flex items-center justify-center backdrop-blur-sm bg-black/50">
-          <div className="relative inset-0 w-[360px] bg-zinc-950/90 md:w-[800px] rounded-lg p-6">
-            <div className="text-2xl text-center mb-4 text-white">Services</div>
-            <hr className="border-gray-700 mb-4" />
+    <Modal
+    backdrop={"blur"}
+    isOpen={props?.isCerOpen}
+    onOpenChange={props?.onCerOpenChange}
+    className="w-[360px] bg-zinc-950/90 md:w-[1000px]"
+    hideCloseButton
+  >
+    <ModalContent>
+      {(onClose) => (
+        <>
+          <ModalHeader className="flex flex-col gap-1 text-[23px] text-center">
+            Coding Platform & Certifications
+          </ModalHeader>
 
-            <div className="p-4">
-              <p className="text-xs font-semibold italic md:text-sm text-gray-300">wdifvdn</p>
-              <p className="text-sm font-bold md:text-base text-lime-400">fdgbfn</p>
-            </div>
+          <Divider />
+          <ModalBody className="justify-center p-4">
+              <div className="text-lg font-semibold text-[#99D52A]">
+                Coding Platforms Ratings:
+                </div>
+                {
+                  codingRating?.map((e, i) => (
+                    <div className="" key={i}>
+                      <a href={e?.url} alt={e?.name}>
+                        <div className="flex flex-row gap-4">
+                          {/* <img src={e?.logo} className="w-5 h-5" /> */}
+                          <Icon icon={e?.logo} width={25} />
+                          <span className="text-sm font-semibold">🔸{e?.name}: </span> 
+                          <span className="text-sm">{e?.rating}</span>
+                        </div>
+                      </a>
+                    </div>
+                  ))
+                }
+                <Divider/>
+                <div className="text-lg font-semibold text-[#99D52A]">
+                  Certifications:
+                </div>
+                {
+                  certificates?.map((e, i) => (
+                    <div className="" key={i}>
+                      <div className=" gap-1">
+                        <span className="text-sm text-semibold">🔸 {e?.name}</span>
+                        <span className="text-sm te"> --by {e?.org}</span>
+                      </div>
+                        {/* <span className="text-sm">{e?.description}</span> */}
+                    </div>
+                  ))
+                }
 
-            <div className="mt-4 flex justify-center">
-              <button
-                onClick={props?.onCerClose}
-                className="w-full px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
+                <Divider/>
+
+                <div className="flex flex-row gap-4 mx-auto">
+                  {
+                    codingPlatforms?.map((e, i) => (
+                      <a href={e?.url} alt={e?.name} key={i}>
+                          <Icon icon={e?.logo} width={25} />
+                      </a>
+                    )
+                  )}
+                </div>
+          </ModalBody>
+
+          <ModalFooter className="justify-center">
+            <Button
+              color="danger"
+              variant="flat"
+              onPress={onClose}
+              className="w-full"
+            >
+              Close
+            </Button>
+          </ModalFooter>
+        </>
+      )}
+    </ModalContent>
+  </Modal>
   )
 }
 

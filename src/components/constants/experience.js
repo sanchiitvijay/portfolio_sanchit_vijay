@@ -1,6 +1,6 @@
 const experience = [
     {
-        name: "AamaraTech",
+        company: "AamaraTech",
         location: "Bangalore, India",
         role: "Backend Development Intern",
         link: "",
