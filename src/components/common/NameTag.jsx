@@ -15,9 +15,9 @@ const NameTag = () => {
           className="text-sm text-white font-medium w-[160px] md:text-xl md:w-full"
           words={[
             "a MERN Developer",
-            "an UI/UX Designer",
-            "a Competitive Programmer",
+            "a CP Coder",
             "a Tech Enthusiast",
+            "a sleeper"
           ]}
         />
       </div>

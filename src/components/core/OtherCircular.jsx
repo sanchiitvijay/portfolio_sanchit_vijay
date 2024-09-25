@@ -10,9 +10,9 @@ const OtherCircular = () => {
 
     <MyCard
       color="zinc"
-      className="w-36 h-20 justify-center  items-center flex flex-col gap-1 p-0 md:w-full"
+      className="w-36 h-20 justify-center bg-oceandark items-center flex flex-col gap-1 p-0 md:w-full"
       >
-      <CardBody className="flex flex-row items-center overflow-hidden justify-center gap-2 p-0">
+      <CardBody className="flex flex-row items-center text-xl overflow-hidden justify-center gap-2 p-0">
         Other Circullum 
       </CardBody>
       <OtherCircularModal isOpen={isOpen} onOpenChange={onOpenChange} />

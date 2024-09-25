@@ -48,7 +48,7 @@ const LandingPageMd = () => {
             Resume
           </Button>
         </div>
-        <div className="w-[346px] h-[80px] rounded-2xl">
+        <div className="w-[346px] bg-flower h-[80px] rounded-2xl">
           {/* <CertificatesModal onCerClose={onCerClose} /> */}
           <Education onOpen={onOpen} />
           <EducationModal isOpen={isOpen} onOpenChange={onOpenChange} />

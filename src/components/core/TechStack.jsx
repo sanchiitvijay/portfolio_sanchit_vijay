@@ -4,6 +4,7 @@ import { MyCard } from "../common/MyCard";
 import LogoMarqueeFull from "../common/LogoMarqueeFull";
 
 const TechStack = (props) => {
+  
   return (
     <button onClick={props?.onOpen} className="w-full h-full">
 

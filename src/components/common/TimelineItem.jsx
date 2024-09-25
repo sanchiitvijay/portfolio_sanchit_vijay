@@ -15,7 +15,7 @@ const TimelineItem = ({ timeline, role, company, desc, tech, link, location }) =
           </p>
         );
       })}
-      <p className="font-semibold mt-2">Tech Stack:
+      <div className="font-semibold mt-2">Tech Stack:
 
       {tech?.map((item, index) => {
         return (
@@ -24,7 +24,7 @@ const TimelineItem = ({ timeline, role, company, desc, tech, link, location }) =
           </p>
         );
       })}
-      </p>
+      </div>
     </>
   );
 };

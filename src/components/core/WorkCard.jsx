@@ -4,42 +4,57 @@ import SparklesText from "../magicui/sparkles-text";
 import { MyCard } from "../common/MyCard";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { project } from "../constants/project";
 
 const WorkCard = () => {
   const [offset, setOffset] = useState(0);
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 834);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 834);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const handlePrevOffset = () => {
+    let sizing = isMobile ? 90 : 220;
     if (offset) {
-      setOffset((prev) => prev - 220);
+      setOffset((prev) => prev - sizing);
     }
   };
   const handleNextOffset = () => {
-    if (offset === 220) {
+    let sizing = isMobile ? 90 : 220;
+    if (offset === sizing) {
       setOffset(0);
-    } else setOffset((next) => next + 220);
+    } else setOffset((next) => next + sizing);
   };
 
 
   return (
     <MyCard
       color="zinc"
-      className="px-4 py-3 w-full flex flex-col gap-10 h-[310px] items-center justify-center"
+      className="md:px-4 py-3 w-full flex flex-col gap-10 md:h-[310px] items-center justify-center"
     >
       <SparklesText text="Projects" />
-      <CardBody className="flex flex-col gap-3 overflow-hidden w-[140px] md:w-[480px] md:justify-center">
+      <CardBody className="flex flex-col gap-3 overflow-hidden w-[85%] md:w-[480px] md:justify-center">
         <motion.div
           className="flex flex-row gap-3 w-[1200px]"
           animate={{ x: -offset }}
           transition={{ ease: "easeInOut", duration: 0.5 }}
         >
-
           {
-            project.map((item, index) => (
+            project?.map((item, index) => (
               <WorkItem key={index} {...item} />
             ))
           }
-          {/* <WorkItem name="name4" desc="desc4" /> */}
         </motion.div>
         <div className="flex flex-row justify-between">
           <Icon

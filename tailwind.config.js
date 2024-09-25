@@ -16,12 +16,17 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        "custom-gradient":
-          "linear-gradient(180deg, rgba(9,9,0,1) 0%, rgba(9,9,0,0) 10%, rgba(9,9,0,0) 50%, rgba(9,9,0,0) 90%, rgba(9,9,0,1) 100%)",
-        "horizontal-vignette":
-          "linear-gradient(90deg, rgba(9,9,0,1) 0%, rgba(9,9,0,1) 6%, rgba(9,9,0,0) 50%, rgba(9,9,0,0) 90%, rgba(9,9,0,1) 100%)",
-      }),
+      backgroundImage: {
+        'cat': "url('/src/assets/Pics/cat.jpg')",
+        'blackslime': "url('/src/assets/Pics/blackslime.jpg')",
+        'direction': "url('/src/assets/Pics/direction.jpg')",
+        'duck': "url('/src/assets/Pics/duck.jpg')",
+        'flowers': "url('/src/assets/Pics/flowers.jpg')",
+        'hands': "url('/src/assets/Pics/hands.jpg')",
+        'oceandark': "url('/src/assets/Pics/oceandark.jpg')",
+        'webdark': "url('/src/assets/Pics/webdark.jpg')",
+        'dino': "url('/src/assets/Pics/dino.jpg')",
+      },
       fontFamily: {
         maison: ["Maison Neue Extended", "sans-serif"],
         garamond: ["Apple Garamond","serif"],

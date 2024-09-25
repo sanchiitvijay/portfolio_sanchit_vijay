@@ -16,7 +16,7 @@ const InfoGraphics = (props) => {
       <div className="md:w-[164px] md:h-[100px] md:rounded-2xl sm:w-[90%]">
         <Time/>
       </div>
-      <div className="md:w-[347px] md:h-[100px] md:rounded-2xl sm:w-[90%]">
+      <div className="md:w-[347px] bg-duck md:h-[100px] md:rounded-2xl sm:w-[90%]">
         <OtherCir onCerOpen={onCerOpen} />
       </div>
 

@@ -26,7 +26,6 @@ const LogoMarqueeFull = () => {
           <Icon icon="vscode-icons:file-type-firebase" width={32} />
           <Icon icon="simple-icons:socketdotio" width={32} />
           <Icon icon="simple-icons:express" width={32} />
-
           <Icon icon="devicon--django-line" width={32} />
         </Marquee>
 
@@ -45,7 +44,7 @@ const LogoMarqueeFull = () => {
 
 
         <Marquee vertical="true" className="[--duration:10s] [--gap:0.8em]">
-          <Icon icon="logos:figma" width={32} />
+          <Icon icon="logos:figma" width={30} />
           <Icon icon="vscode-icons:file-type-git" width={32} />
           <Icon icon="bytesize:github" width={32} />
           <Icon icon="vscode-icons:file-type-vscode" width={32} />

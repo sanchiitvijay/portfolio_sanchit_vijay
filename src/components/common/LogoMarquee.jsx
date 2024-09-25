@@ -8,7 +8,7 @@ const LogoMarquee = () => {
 
       <div className="flex gap-1">
         <Marquee vertical="true" className="[--duration:15s]">
-          <Icon
+        <Icon
             icon="fa6-brands:square-js"
             width={32}
             style={{ color: "#eeff00" }}
@@ -16,24 +16,35 @@ const LogoMarquee = () => {
           <Icon icon="vscode-icons:file-type-html" width={32} />
           <Icon icon="devicon:css3" width={32} />
           <Icon icon="logos:react" width={32} />
+          <Icon icon="logos:bootstrap" width={32} />
+          <Icon icon="logos:tailwindcss-icon" width={32} />
+          <Icon icon="devicon--nodejs-wordmark" width={32} />
+          <Icon icon="devicon--postgresql-wordmark" width={32} />
+          <Icon icon="vscode-icons:file-type-sql" width={32} />
+          <Icon icon="devicon:mongodb-wordmark" width={32} />
+          <Icon icon="devicon:redis-wordmark" width={32} />
+          <Icon icon="vscode-icons:file-type-firebase" width={32} />
+          <Icon icon="simple-icons:socketdotio" width={32} />
+          <Icon icon="simple-icons:express" width={32} />
+          <Icon icon="devicon--django-line" width={32} />
         </Marquee>
 
-        {/* Programming Languages: C, C++ (DSA), Java, Python, JavaScript
-Full Stack: HTML5, CSS3, JavaScript, Node.js, EJS, React.js, SQL, MongoDB, Express.js, Firebase, Django,
-Redis, FireStore, PostgresSQL, tailwind, socket.io,
-Developer Tools: VS Code, Git, GitHub, Adobe Photoshop, Canva, figma
-Soft Skills: - Leadership, Problem Solving Skills, Hard Working, Fast Learner, Discipline, Punctual, Empathy,
-Communication Skills, Time Management */}
 
         <Marquee
           vertical="true"
           reverse="true"
           className="[--duration:15s] [--gap:0.8em]"
         >
-          <Icon icon="logos:bootstrap" width={32} />
-          <Icon icon="logos:tailwindcss-icon" width={32} />
-
-          <Icon icon="logos:figma" width={32} />
+          <Icon icon="vscode-icons--file-type-js-official" width={32} />
+          <Icon icon="vscode-icons:file-type-cpp3" width={32} />
+          <Icon icon="vscode-icons:file-type-c" width={32} />
+          <Icon icon="vscode-icons:file-type-python" width={32} />
+          <Icon icon="vscode-icons:file-type-java" width={32} />
+          <Icon icon="logos:figma" width={30} />
+          <Icon icon="vscode-icons:file-type-git" width={32} />
+          <Icon icon="bytesize:github" width={32} />
+          <Icon icon="vscode-icons:file-type-vscode" width={32} />
+          <Icon icon="logos:ubuntu" width={32} />
         </Marquee>
       </div>
     </div>

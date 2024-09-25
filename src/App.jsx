@@ -26,13 +26,13 @@ function App() {
         fallback={
           <Spinner
             label="Welcome to Sanchit's Space..."
-            className="flex flex-col items-center justify-center min-h-screen"
+            className="flex flex-col bg-oceandark items-center justify-center min-h-screen"
             color="warning"
           />
         }
       >
-        {/* {isMobile ? <LandingPageMobile /> : <LandingPageMd />} */}
-        <LandingPageMd/>
+        {isMobile ? <LandingPageMobile /> : <LandingPageMd />}
+        {/* <LandingPageMd/> */}
       </Suspense>
     </div>
   );

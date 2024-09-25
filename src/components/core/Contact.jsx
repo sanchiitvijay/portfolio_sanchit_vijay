@@ -8,12 +8,11 @@ const Contact = () => {
   return (
     <button  onClick={onOpen} className="h-full w-full">
       <MyCard
-        className="gap-2 items-center md:w-full sm:w-[390px] md:h-full"
+        className="gap-2 items-center md:w-full bg-dino bg-cover bg-center sm:w-[390px] md:h-full"
         color="zinc"
       >
-        <CardBody className="flex text-wrap text-center font-garamond md:text-[22px] gap-4 leading-tight sm:text-base">
-          <Image src={climax} alt="Climax from Fight Club" />
-          <p>
+        <CardBody className="flex text-wrap text-center font-garamond md:text-2xl gap-4 leading-tight sm:text-lg">
+          <p className="mt-6">
             Contact Me
           </p>
         </CardBody>

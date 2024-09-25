@@ -2,94 +2,39 @@ import InfoGraphics from "../core/InfoGraphics";
 import NameCard from "../core/NameCard";
 import {
   Button,
-  Divider,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
   useDisclosure,
 } from "@nextui-org/react";
 import TechStack from "../core/TechStack";
-import SocialHandle from "../core/OtherCircular";
 import "rsuite/Timeline/styles/index.css";
-import TimelineItem from "../common/TimelineItem";
-import { Timeline } from "rsuite";
-import WorkExperience from "../core/Education";
-import content from "@/lib/constants";
-import Quote from "../core/Contact";
 import { Icon } from "@iconify/react";
+import ExperienceModal from "../modals/ExperienceModal";
+import Education from "../core/Education";
+import EducationModal from "../modals/EducationModal";
+import TechStackModal from "../modals/TechStackModal";
+import WorkCard from "../core/WorkCard";
+import Contact from "../core/Contact";
+import OtherCircular from "../core/OtherCircular";
 
 const HomeMobile = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const {
+    isOpen: isTechOpen,
+    onOpen: onTechOpen,
+    onOpenChange: onTechOpenChange,
+  } = useDisclosure();
+
+  const {
+    isOpen: isServicesOpen,
+    onOpen: onServicesOpen,
+    onOpenChange: onServicesOpenChange,
+  } = useDisclosure();
 
   return (
     <div className="flex flex-col w-[100%] justify-center items-center gap-10 md:hidden">
       <InfoGraphics />
       <NameCard />
-      <WorkExperience onOpen={onOpen} />
-      <Modal
-        backdrop={"blur"}
-        isOpen={isOpen}
-        onOpenChange={onOpenChange}
-        className="w-[360px] bg-zinc-950/90"
-        hideCloseButton
-      >
-        <ModalContent>
-          {(onClose) => (
-            <>
-              <ModalHeader className="flex flex-col gap-1 text-2xl text-center">
-                Experience
-              </ModalHeader>
-
-              <Divider />
-              <ModalBody className="justify-center p-4">
-                <Timeline
-                  className="custom-timeline"
-                  isItemActive={(index) => index === 0}
-                >
-                  <Timeline.Item>
-                    <TimelineItem
-                      timeline={content.timeline[0]}
-                      title={content.title[0]}
-                      company={content.company[0]}
-                      description={content.para.content1}
-                    />
-                  </Timeline.Item>
-
-                  <Timeline.Item>
-                    <TimelineItem
-                      timeline={content.timeline[1]}
-                      title={content.title[1]}
-                      company={content.company[1]}
-                      description={content.para.content2}
-                    />
-                  </Timeline.Item>
-
-                  <Timeline.Item>
-                    <TimelineItem
-                      timeline={content.timeline[2]}
-                      title={content.title[2]}
-                      company={content.company[2]}
-                      description={content.para.content3}
-                    />
-                  </Timeline.Item>
-                </Timeline>
-              </ModalBody>
-              <ModalFooter className="justify-center">
-                <Button
-                  color="danger"
-                  variant="flat"
-                  onPress={onClose}
-                  className="w-full"
-                >
-                  Close
-                </Button>
-              </ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
+      <Education onOpen={onOpen} />
+      <EducationModal isOpen={isOpen} onOpenChange={onOpenChange}/>
 
       <div className="flex flex-row gap-4 scale-[1.15] mt-2">
         <div className="flex flex-col gap-4">
@@ -100,20 +45,37 @@ const HomeMobile = () => {
             }
             onClick={() => {
               window.open(
-                "https://docs.google.com/document/d/1saPsB7Lnnpk_S98K3g7P94RCN6uOTlMt7ph25-QDYpI/export?format=pdf"
+                "https://drive.google.com/drive/folders/1Fq5tRrS4ZNOUdeKaTuFB6xs41lpTgKpL?usp=sharing"
               );
             }}
           >
             Resume
           </Button>
+          <Button
+            className="w-[172px] h-full text-xl bg-direction bg-cover font-semibold transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
+            onPress={onServicesOpen}
+          >
+            Experience
+          </Button>
+          <ExperienceModal
+            isServicesOpen={isServicesOpen}
+            onServicesOpenChange={onServicesOpenChange}
+          />
         </div>
         <div className="flex flex-col gap-4">
-          <TechStack />
-          <SocialHandle />
+        <TechStack onOpen={onTechOpen} />
+          <TechStackModal
+            isTechOpen={isTechOpen}
+            onTechOpenChange={onTechOpenChange}
+          />
+          <OtherCircular />
         </div>
       </div>
+      <div className=" w-full rounded-2xl">
+          <WorkCard />
+        </div>
       <div className="flex flex-col justify-center items-center gap-3 mt-1 ">
-        <Quote />
+        <Contact />
       </div>
     </div>
   );

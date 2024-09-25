@@ -17,7 +17,7 @@ const WorkItem = (props) => {
 
       <CardFooter className="flex flex-col before:bg-white/10 border-white/20 overflow-hidden py-1 absolute bottom-0 shadow-xl z-10">
         <p className="font-bold text-xsm md:text-base">{props?.name}</p>
-        <p className="text-xsm md:text-xsm">{props?.briefDesc}</p>
+        <p className="text-xsm max-md:hidden md:text-xsm">{props?.briefDesc}</p>
       </CardFooter>
     </Card>
 
