@@ -25,13 +25,13 @@ const WorkCard = () => {
   }, []);
 
   const handlePrevOffset = () => {
-    let sizing = isMobile ? 90 : 220;
+    let sizing = isMobile ? 80 : 220;
     if (offset) {
       setOffset((prev) => prev - sizing);
     }
   };
   const handleNextOffset = () => {
-    let sizing = isMobile ? 90 : 220;
+    let sizing = isMobile ? 80 : 220;
     if (offset === sizing) {
       setOffset(0);
     } else setOffset((next) => next + sizing);
@@ -44,9 +44,9 @@ const WorkCard = () => {
       className="md:px-4 py-3 w-full flex flex-col gap-10 md:h-[310px] items-center justify-center"
     >
       <SparklesText text="Projects" />
-      <CardBody className="flex flex-col gap-3 overflow-hidden w-[85%] md:w-[480px] md:justify-center">
+      <CardBody className="flex flex-col gap-3 overflow-hidden md:w-[480px] md:justify-center">
         <motion.div
-          className="flex flex-row gap-3 w-[1200px]"
+          className="flex flex-row gap-3 md:w-[1200px]"
           animate={{ x: -offset }}
           transition={{ ease: "easeInOut", duration: 0.5 }}
         >

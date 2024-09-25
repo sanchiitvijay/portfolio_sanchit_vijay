@@ -39,9 +39,7 @@ const LogoMarqueeFull = () => {
           <Icon icon="vscode-icons:file-type-c" width={32} />
           <Icon icon="vscode-icons:file-type-python" width={32} />
           <Icon icon="vscode-icons:file-type-java" width={32} />
-          
         </Marquee>
-
 
         <Marquee vertical="true" className="[--duration:10s] [--gap:0.8em]">
           <Icon icon="logos:figma" width={30} />

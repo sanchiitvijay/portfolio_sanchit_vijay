@@ -32,7 +32,7 @@ const ContactModal = (props) => {
                   <div className="flex flex-row gap-3 mb-3">
                     <Icon icon="mdi:email" className="w-4 h-4" />
                     <span className="font-semibold">Email:</span>
-                    <span>sanchiitvijay@gmail.com</span>
+                    <span><a href="mailto: sanchiitvijay@gmail.com" >sanchiitvijay@gmail.com</a></span>
                   </div>
                   <div className="flex flex-row gap-3 mb-3">
                     <Icon icon="ph:address-book-fill" className="w-5 h-5" />
@@ -43,12 +43,12 @@ const ContactModal = (props) => {
                   <div className="my-3 px-8">
                         <Divider />
                       </div>
-                    <div className="flex flex-row gap-3 mt-6 text-sm mx-auto place-content-center">
+                    <div className="flex flex-row gap-3 mt-4 text-sm mx-auto place-content-center">
                       {contactLink.map((link, index) => (
                         <div key={index} className="flex flex-col gap-3">
                           
-                          <Icon icon={link.logo} className="w-6 h-6 mx-auto" />
                           <a href={link.url} target="_blank" rel="noreferrer" className="text-sm">
+                          <Icon icon={link.logo} className="w-6 h-6 mx-auto mb-2" />
                             {link.name}
                           </a>
 

@@ -1,8 +1,6 @@
-import { useState } from 'react';
-import { MyCard } from './MyCard';
+import { MyCard } from "./MyCard";
 
 const Certificates = (props) => {
-
   return (
     <>
       <button onClick={props?.onCerOpen} className="w-full h-full">
@@ -15,8 +13,6 @@ const Certificates = (props) => {
           </div>
         </MyCard>
       </button>
-
-      
     </>
   );
 };

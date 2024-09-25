@@ -8,7 +8,7 @@ const LogoMarquee = () => {
 
       <div className="flex gap-1">
         <Marquee vertical="true" className="[--duration:15s]">
-        <Icon
+          <Icon
             icon="fa6-brands:square-js"
             width={32}
             style={{ color: "#eeff00" }}
@@ -28,7 +28,6 @@ const LogoMarquee = () => {
           <Icon icon="simple-icons:express" width={32} />
           <Icon icon="devicon--django-line" width={32} />
         </Marquee>
-
 
         <Marquee
           vertical="true"

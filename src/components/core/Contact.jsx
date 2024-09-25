@@ -1,6 +1,5 @@
 import { MyCard } from "../common/MyCard";
-import { CardBody, Image, useDisclosure } from "@nextui-org/react";
-import climax from "@/assets/Pics/ClimaxFCx1.webp";
+import { CardBody, useDisclosure } from "@nextui-org/react";
 import ContactModal from "../modals/ContactModal";
 
 const Contact = () => {

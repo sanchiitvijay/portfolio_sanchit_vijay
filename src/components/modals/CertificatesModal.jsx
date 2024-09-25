@@ -30,8 +30,8 @@ const CertificatesModal = (props) => {
                       <a href={e?.url} alt={e?.name}>
                         <div className="flex flex-row gap-4">
                           {/* <img src={e?.logo} className="w-5 h-5" /> */}
-                          <Icon icon={e?.logo} width={25} />
-                          <span className="text-sm font-semibold">🔸{e?.name}: </span> 
+                          <Icon icon={e?.logo} width={18} />
+                          <span className="text-sm font-semibold">{e?.name}: </span> 
                           <span className="text-sm">{e?.rating}</span>
                         </div>
                       </a>

@@ -1,11 +1,8 @@
 import { Button, Divider, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from "@nextui-org/react";
 import { data } from "../constants/othercer";
 
-
 const OtherCircularModal = (props) => {
-
   return (
-    
     <Modal
     backdrop={"blur"}
     isOpen={props?.isOpen}
@@ -17,7 +14,7 @@ const OtherCircularModal = (props) => {
       {(onClose) => (
         <>
           <ModalHeader className="flex flex-col gap-1 text-2xl text-center">
-            Other Circular Activities
+          Extra Curricular
           </ModalHeader>
 
           <Divider />

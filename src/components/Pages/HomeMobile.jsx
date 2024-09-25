@@ -1,9 +1,6 @@
 import InfoGraphics from "../core/InfoGraphics";
 import NameCard from "../core/NameCard";
-import {
-  Button,
-  useDisclosure,
-} from "@nextui-org/react";
+import { Button, useDisclosure } from "@nextui-org/react";
 import TechStack from "../core/TechStack";
 import "rsuite/Timeline/styles/index.css";
 import { Icon } from "@iconify/react";
@@ -34,7 +31,7 @@ const HomeMobile = () => {
       <InfoGraphics />
       <NameCard />
       <Education onOpen={onOpen} />
-      <EducationModal isOpen={isOpen} onOpenChange={onOpenChange}/>
+      <EducationModal isOpen={isOpen} onOpenChange={onOpenChange} />
 
       <div className="flex flex-row gap-4 scale-[1.15] mt-2">
         <div className="flex flex-col gap-4">
@@ -63,7 +60,7 @@ const HomeMobile = () => {
           />
         </div>
         <div className="flex flex-col gap-4">
-        <TechStack onOpen={onTechOpen} />
+          <TechStack onOpen={onTechOpen} />
           <TechStackModal
             isTechOpen={isTechOpen}
             onTechOpenChange={onTechOpenChange}
@@ -71,10 +68,10 @@ const HomeMobile = () => {
           <OtherCircular />
         </div>
       </div>
-      <div className=" w-full rounded-2xl">
-          <WorkCard />
-        </div>
-      <div className="flex flex-col justify-center items-center gap-3 mt-1 ">
+      <div className="w-full rounded-2xl">
+        <WorkCard />
+      </div>
+      <div className="flex flex-col justify-center items-center gap-3 mt-[-20px] ">
         <Contact />
       </div>
     </div>

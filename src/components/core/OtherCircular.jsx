@@ -7,16 +7,17 @@ const OtherCircular = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <button className="w-full h-full" onClick={onOpen}>
-
-    <MyCard
-      color="zinc"
-      className="w-36 h-20 justify-center bg-oceandark items-center flex flex-col gap-1 p-0 md:w-full"
+      <MyCard
+        color="zinc"
+        className="w-36 h-20 justify-center mx-auto bg-oceandark items-center flex flex-col gap-1 p-0 md:w-full"
       >
-      <CardBody className="flex flex-row items-center text-xl overflow-hidden justify-center gap-2 p-0">
-        Other Circullum 
-      </CardBody>
-      <OtherCircularModal isOpen={isOpen} onOpenChange={onOpenChange} />
-    </MyCard>
+        <div className="flex mx-auto place-content-center place-items-center">
+          <CardBody className="flex md:text-xl text-lg overflow-hidden gap-2 px-2">
+            Extra Curricular
+          </CardBody>
+        </div>
+        <OtherCircularModal isOpen={isOpen} onOpenChange={onOpenChange} />
+      </MyCard>
     </button>
   );
 };

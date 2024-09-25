@@ -16,7 +16,7 @@ const codingPlatforms = [
     },
     {
         name: 'Hackerrank',
-        url: 'https://www.hackerrank.com/profile/sanchitvijay',
+        url: 'https://www.hackerrank.com/profile/sanchiitvijay',
         logo: 'simple-icons:hackerrank'
     },
     {
@@ -31,7 +31,7 @@ const codingRating = [
     {
         name: 'Codechef',
         rating: 1562,
-        url: 'https://www.codechef.com/sanchiit/',
+        url: 'https://www.codechef.com/users/sanchiit',
         logo: 'simple-icons:codechef'
     },
     {
