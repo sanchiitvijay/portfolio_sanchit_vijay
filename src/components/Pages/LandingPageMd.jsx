@@ -35,7 +35,7 @@ const LandingPageMd = () => {
         </div>
         <div className=" w-[164px] h-[80px] rounded-2xl">
           <Button
-            className="w-full h-full text-xl font-semibold bg-zinc-950 transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
+            className="w-full  shadow-slate-500 shadow  h-full text-xl font-semibold bg-zinc-950 transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
             startContent={
               <Icon icon="mage:file-download" style={{ color: "#99d52a" }} />
             }
