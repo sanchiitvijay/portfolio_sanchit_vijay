@@ -1,7 +1,7 @@
 const codingPlatforms = [
     {
         name: 'Codechef',
-        url: 'https://www.codechef.com/sanchiit/',
+        url: 'https://www.codechef.com/users/sanchiit/',
         logo: 'simple-icons:codechef'
     },
     {
@@ -11,7 +11,7 @@ const codingPlatforms = [
     },
     {
         name: 'Leetcode',
-        url: 'https://leetcode.com/u/sanchiitvijay/',
+        url: 'https://leetcode.com/u/sanchitvijay/',
         logo: 'simple-icons:leetcode'
     },
     {

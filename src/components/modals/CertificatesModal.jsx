@@ -28,7 +28,7 @@ const CertificatesModal = (props) => {
                   codingRating?.map((e, i) => (
                     <div className="" key={i}>
                       <a href={e?.url} alt={e?.name}>
-                        <div className="flex flex-row gap-4">
+                        <div className="flex my-[-3px] flex-row gap-4">
                           {/* <img src={e?.logo} className="w-5 h-5" /> */}
                           <Icon icon={e?.logo} width={18} />
                           <span className="text-sm font-semibold">{e?.name}: </span> 
@@ -45,7 +45,7 @@ const CertificatesModal = (props) => {
                 {
                   certificates?.map((e, i) => (
                     <div className="" key={i}>
-                      <div className=" gap-1">
+                      <div className=" gap-1 my-[-3px]">
                         <span className="text-sm text-semibold">🔸 {e?.name}</span>
                         <span className="text-sm te"> --by {e?.org}</span>
                       </div>

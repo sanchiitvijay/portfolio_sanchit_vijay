@@ -35,7 +35,7 @@ const TechStackModal = (props) => {
               <div className="text-lg font-semibold">
                 <span className="text-[#99D52A]">Fullstack: </span>
                 {fullstack?.map((e, i) => (
-                  <span className="text-sm p-1 my-auto" key={i}>
+                  <span className="text-sm my-auto" key={i}>
                     {e},{" "}
                   </span>
                 ))}
@@ -47,7 +47,7 @@ const TechStackModal = (props) => {
               <div className="text-lg font-semibold">
                 <span className="text-[#99D52A]">Programming Languages: </span>
                 {programmingLanguages?.map((e, i) => (
-                  <span className="text-sm p-1 my-auto" key={i}>
+                  <span className="text-sm my-auto" key={i}>
                     {e},{" "}
                   </span>
                 ))}
@@ -59,7 +59,7 @@ const TechStackModal = (props) => {
               <div className="text-lg font-semibold">
                 <span className="text-[#99D52A]">Developer Tools: </span>
                 {developerTools?.map((e, i) => (
-                  <span className="text-sm p-1 my-auto" key={i}>
+                  <span className="text-sm my-auto" key={i}>
                     {e},{" "}
                   </span>
                 ))}
@@ -71,7 +71,7 @@ const TechStackModal = (props) => {
               <div className="text-lg font-semibold">
                 <span className="text-[#99D52A]">Soft Skills: </span>
                 {softSkills?.map((e, i) => (
-                  <span className="text-sm p-1 my-auto" key={i}>
+                  <span className="text-sm my-auto" key={i}>
                     {e},{" "}
                   </span>
                 ))}

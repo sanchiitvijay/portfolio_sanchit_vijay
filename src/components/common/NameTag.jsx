@@ -4,7 +4,7 @@ const NameTag = () => {
   return (
     <div className="flex flex-col">
       <div className="text-2xl font-bold flex gap-1 items-center md:text-[46px] md:-mt-3 sm:-mt-1">
-        Sanchit VIjay
+        Sanchit Vijay
       </div>
 
       <div className="-mt-3 flex gap-1 items-center md:-mt-4">
@@ -17,7 +17,7 @@ const NameTag = () => {
             "a MERN Developer",
             "a CP Coder",
             "a Tech Enthusiast",
-            "a sleeper"
+            "a Chasing the Alignment"
           ]}
         />
       </div>

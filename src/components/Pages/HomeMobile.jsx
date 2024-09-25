@@ -52,7 +52,7 @@ const HomeMobile = () => {
             }
             onClick={() => {
               window.open(
-                "https://drive.google.com/drive/folders/1Fq5tRrS4ZNOUdeKaTuFB6xs41lpTgKpL?usp=sharing"
+                "https://www.dropbox.com/scl/fi/0qr48czodx7idsxcbiqo5/resume_sanchit_vijay.pdf?rlkey=bpngu4nyh4rpb3gq0gb011fhw&st=ki10am6y&dl=0"
               );
             }}
           >
