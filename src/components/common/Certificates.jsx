@@ -6,7 +6,7 @@ const Certificates = (props) => {
       <button onClick={props?.onCerOpen} className="w-full h-full">
         <MyCard
           color="zinc"
-          className="p-1 w-full h-[88px] bg-duck bg-cover flex flex-col items-center md:h-full my-auto"
+          className="p-1 w-full h-[88px] bg-duck bg-cover rounded-xl flex flex-col items-center md:h-full my-auto"
         >
           <div className="text-white text-sm font-medium text-center leading-none md:text-2xl my-auto">
             Coding platform & certifications

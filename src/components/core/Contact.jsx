@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <button  onClick={onOpen} className="h-full w-full">
       <MyCard
-        className="gap-2 items-center md:w-full bg-dino bg-cover bg-center sm:w-[390px] md:h-full"
+        className="gap-2 items-center md:w-full bg-dino bg-cover bg-center md:h-full"
         color="zinc"
       >
         <CardBody className="flex text-wrap text-center font-garamond md:text-2xl gap-4 leading-tight sm:text-lg">

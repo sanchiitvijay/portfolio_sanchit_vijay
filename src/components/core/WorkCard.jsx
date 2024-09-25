@@ -44,7 +44,7 @@ const WorkCard = () => {
       className="md:px-4 py-3 w-full flex flex-col gap-10 md:h-[310px] items-center justify-center"
     >
       <SparklesText text="Projects" />
-      <CardBody className="flex flex-col gap-3 overflow-hidden md:w-[480px] md:justify-center">
+      <CardBody className="flex flex-col gap-3 overflow-hidden w-[90%] md:w-[480px] md:justify-center">
         <motion.div
           className="flex flex-row gap-3 md:w-[1200px]"
           animate={{ x: -offset }}
