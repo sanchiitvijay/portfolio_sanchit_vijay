@@ -1,8 +1,6 @@
-import { useState } from "react";
 import OtherCir from "../common/Certificates";
 import Time from "../common/Time";
 import { useDisclosure } from "@nextui-org/react";
-import Certificates from "../common/Certificates";
 import CertificatesModal from "../modals/CertificatesModal";
 
 const InfoGraphics = (props) => {

@@ -5,7 +5,7 @@ import {education} from '../constants/education'
 import TimeLineEducation from '../common/TimeLineEducation';
 
 const EducationModal = (props) => {
-    console.log(education);
+
   return (
     <Modal
             backdrop={"blur"}

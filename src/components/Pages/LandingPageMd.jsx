@@ -1,27 +1,12 @@
-import {
-  Button,
-  Divider,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  useDisclosure,
-} from "@nextui-org/react";
+import { Button, useDisclosure } from "@nextui-org/react";
 import TechStack from "../core/TechStack";
 import WorkCard from "../core/WorkCard";
 import Services from "../core/Services";
 import OtherCircular from "../core/OtherCircular";
-import Timeline from "rsuite/Timeline";
-import TimelineItem from "../common/TimelineItem";
-import content from "@/lib/constants";
 import InfoGraphics from "../core/InfoGraphics";
 import Contact from "../core/Contact";
 import NameCard from "../core/NameCard";
 import { Icon } from "@iconify/react";
-import { useState } from "react";
-import ContactModal from "../modals/ContactModal";
-import CertificatesModal from "../modals/CertificatesModal";
 import Education from "../core/Education";
 import EducationModal from "../modals/EducationModal";
 import ExperienceModal from "../modals/ExperienceModal";
@@ -39,20 +24,11 @@ const LandingPageMd = () => {
     onOpen: onTechOpen,
     onOpenChange: onTechOpenChange,
   } = useDisclosure();
-  const [isCerOpen, setIsCerOpen] = useState(false);
-
-  const onCerClose = () => setIsCerOpen(false);
-  const onCerOpen = () => setIsCerOpen(true);
-
-  const [isContactOpen, setIsContactOpen] = useState(false);
-
-  const onContactClose = () => setIsContactOpen(false);
-  const onContactOpen = () => setIsContactOpen(true);
 
   return (
     <div className="w-[834px] p-6 z-0 flex flex-wrap gap-4 mx-auto max-md:hidden">
       <div className="flex flex-wrap w-[67%] h-[476px] gap-4 justify-between">
-        <InfoGraphics onCerOpen={onCerOpen} />
+        <InfoGraphics />
 
         <div className=" w-[526px] h-[256px] rounded-2xl">
           <NameCard />
@@ -98,10 +74,8 @@ const LandingPageMd = () => {
 
       <div className="flex flex-row gap-4 mt-[-28px] w-[834px] h-fit">
         <div className="flex flex-col gap-4 h-[334px]">
-          <div
-            className="w-[264px] h-[64%] rounded-2xl gap-2 items-center "
-          >
-            <Contact/>
+          <div className="w-[264px] h-[64%] rounded-2xl gap-2 items-center ">
+            <Contact />
           </div>
           <div className=" w-[264px] h-[25%] rounded-2xl">
             <OtherCircular />

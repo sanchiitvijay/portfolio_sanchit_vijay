@@ -6,7 +6,7 @@ import ContactModal from "../modals/ContactModal";
 const Contact = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
-    <button  onClick={onOpen}>
+    <button  onClick={onOpen} className="h-full w-full">
       <MyCard
         className="gap-2 items-center md:w-full sm:w-[390px] md:h-full"
         color="zinc"
