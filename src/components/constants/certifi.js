@@ -44,8 +44,14 @@ const codingRating = [
     {
         name: 'Leetcode',
         rating: 1634,
-        url: 'https://leetcode.com/u/sanchiitvijay/',
+        url: 'https://leetcode.com/u/sanchitvijay/',
         logo: 'simple-icons:leetcode'
+    },
+    {
+        name: 'Hackerrank',
+        rating: "5 ⭐  in problem solving & 4 ⭐  in C++",
+        url: 'https://www.hackerrank.com/profile/sanchiitvijay',
+        logo: 'simple-icons:hackerrank'
     }
 ];
 
@@ -74,11 +80,6 @@ const certificates = [
         name: 'Lanquill',
         org: 'Lanquill',
         description: 'Learned about English language.',
-    },
-    {
-        name: 'Hackerrank',
-        org: 'Hackerrank',
-        description: '5 star in problem solving & 4 star in C++'
     }
 
 ]
