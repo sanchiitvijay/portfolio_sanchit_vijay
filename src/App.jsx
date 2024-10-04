@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -43,7 +43,7 @@ function App() {
         <Suspense
           fallback={
             <Spinner
-              label="Loading..."
+              label="Welcome to Sanchit's Space..."
               className="flex flex-col bg-oceandark items-center justify-center min-h-screen"
               color="warning"
             />
