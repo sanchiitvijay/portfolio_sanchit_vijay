@@ -13,7 +13,9 @@ const fullstack = [
     "Firebase",
     "Socket.io",
     "Express",
-    "Django"
+    "Django",
+    "Docker",
+    "AWS"
   ];
   
   const programmingLanguages = [

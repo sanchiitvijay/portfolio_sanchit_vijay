@@ -46,8 +46,10 @@ const CertificatesModal = (props) => {
                   certificates?.map((e, i) => (
                     <div className="" key={i}>
                       <div className=" gap-1 my-[-3px]">
-                        <span className="text-sm text-semibold">🔸 {e?.name}</span>
-                        <span className="text-sm te"> --by {e?.org}</span>
+                        <a href={e?.link} target="_blank">
+                          <span className="text-sm text-semibold">🔸 {e?.name}</span>
+                          <span className="text-sm te"> --by {e?.org}</span>
+                        </a>
                       </div>
                         {/* <span className="text-sm">{e?.description}</span> */}
                     </div>

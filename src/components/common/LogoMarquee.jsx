@@ -21,6 +21,8 @@ const LogoMarquee = () => {
           <Icon icon="devicon--nodejs-wordmark" width={32} />
           <Icon icon="devicon--postgresql-wordmark" width={32} />
           <Icon icon="vscode-icons:file-type-sql" width={32} />
+          <Icon icon="skill-icons:aws-dark" width={32} />
+          <Icon icon="skill-icons:docker" width={32} />
           <Icon icon="devicon:mongodb-wordmark" width={32} />
           <Icon icon="devicon:redis-wordmark" width={32} />
           <Icon icon="vscode-icons:file-type-firebase" width={32} />

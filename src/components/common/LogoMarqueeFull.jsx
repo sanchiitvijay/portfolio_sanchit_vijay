@@ -27,6 +27,8 @@ const LogoMarqueeFull = () => {
           <Icon icon="simple-icons:socketdotio" width={32} />
           <Icon icon="simple-icons:express" width={32} />
           <Icon icon="devicon--django-line" width={32} />
+          <Icon icon="skill-icons:aws-dark" width={32} />
+          <Icon icon="skill-icons:docker" width={32} />
         </Marquee>
 
         <Marquee

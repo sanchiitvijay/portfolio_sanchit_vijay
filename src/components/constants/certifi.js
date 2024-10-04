@@ -49,7 +49,7 @@ const codingRating = [
     },
     {
         name: 'Hackerrank',
-        rating: "5 ⭐  in problem solving & 4 ⭐  in C++",
+        rating: "5 ⭐ in problem solving & 4 ⭐ in C++",
         url: 'https://www.hackerrank.com/profile/sanchiitvijay',
         logo: 'simple-icons:hackerrank'
     }
@@ -59,27 +59,26 @@ const certificates = [
     {
         name: 'Postman API Fundamentals',
         org: 'Postman',
-        description: 'Learned about API testing and automation using Postman.',
+        link: 'https://badgr.com/public/assertions/n54xrS8kQw-LQWjmnrLxDw',
     },
     {
         name: 'Data Structure Algorithm',
         org: 'Google',
-        description: 'Learned about Data Structures and Algorithms.',
     },
     {
         name: 'The Complete 2024 Web Development Bootcamp',
         org: 'Angela Yu - Udemy',
-        description: 'Learned about full stack MERN stack Web Development.',
+        link: 'https://www.dropbox.com/scl/fi/6n0aa85h0vmsricqfgbnd/WebDevelopment_ByAngelaYu.jpg?rlkey=h1ptwomzhdxfeo5no8liek18u&st=3htrnc89&dl=0'
     },
     {
         name: 'Python',
         org: 'Kaggle',
-        description: 'Learned about Python programming language.',
+        link: 'https://www.dropbox.com/scl/fi/c6fky11n8ryr1xzw5cbb6/Sanchit-Vijay-Python.png?rlkey=nsxgj5m1w8lo222tj8336qv1s&st=v8ozufba&dl=0'
     },
     {
-        name: 'Lanquill',
-        org: 'Lanquill',
-        description: 'Learned about English language.',
+        name: 'Ultimate AWS Certified Cloud Practitioner',
+        org: 'Stephane Maarek - Udemy',
+        link: 'https://www.dropbox.com/scl/fi/jlmor39ev0maoddgu0le9/aws_foundation.jpg?rlkey=u6q6tkwji4gxz6hgbn1bsp0hm&st=71k1xdub&dl=0'
     }
 
 ]
