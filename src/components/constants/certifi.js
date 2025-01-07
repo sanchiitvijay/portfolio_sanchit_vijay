@@ -1,7 +1,7 @@
 const codingPlatforms = [
     {
         name: 'Codechef',
-        url: 'https://www.codechef.com/users/sanchiit/',
+        url: 'https://www.codechef.com/users/sanchitvijay/',
         logo: 'simple-icons:codechef'
     },
     {
@@ -31,12 +31,12 @@ const codingRating = [
     {
         name: 'Codechef',
         rating: 1562,
-        url: 'https://www.codechef.com/users/sanchiit',
+        url: 'https://www.codechef.com/users/sanchitvijay',
         logo: 'simple-icons:codechef'
     },
     {
         name: 'Codeforces',
-        rating: 800,
+        rating: 1403,
         url: 'https://codeforces.com/profile/sanchiitvijay',
         logo: 'simple-icons:codeforces'
         
