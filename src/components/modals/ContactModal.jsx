@@ -32,7 +32,7 @@ const ContactModal = (props) => {
                   <div className="flex flex-row gap-3 mb-3">
                     <Icon icon="mdi:email" className="w-4 h-4" />
                     <span className="font-semibold">Email:</span>
-                    <span><a href="mailto: sanchiitvijay@gmail.com" >sanchiitvijay@gmail.com</a></span>
+                    <span><a href="mailto: sanchiitvijay@gmail.com" >sanchitvijay2@gmail.com</a></span>
                   </div>
                   <div className="flex flex-row gap-3 mb-3">
                     <Icon icon="ph:address-book-fill" className="w-5 h-5" />

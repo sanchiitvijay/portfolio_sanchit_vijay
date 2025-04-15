@@ -1,5 +1,4 @@
 const fullstack = [
-    "JavaScript",
     "HTML",
     "CSS",
     "React",
@@ -7,9 +6,10 @@ const fullstack = [
     "TailwindCSS",
     "Node.js",
     "PostgreSQL",
-    "SQL",
+    "MySQL",
     "MongoDB",
     "Redis",
+    "Flask",
     "Firebase",
     "Socket.io",
     "Express",

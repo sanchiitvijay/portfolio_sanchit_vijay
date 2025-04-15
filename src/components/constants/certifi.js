@@ -18,11 +18,6 @@ const codingPlatforms = [
         name: 'Hackerrank',
         url: 'https://www.hackerrank.com/profile/sanchiitvijay',
         logo: 'simple-icons:hackerrank'
-    },
-    {
-        name: 'GeeksforGeeks',
-        url: 'https://auth.geeksforgeeks.org/user/sanchiigjbb/',
-        logo: 'simple-icons:geeksforgeeks'
     }
 ];
 
@@ -30,7 +25,7 @@ const codingPlatforms = [
 const codingRating = [
     {
         name: 'Codechef',
-        rating: 1562,
+        rating: 1669,
         url: 'https://www.codechef.com/users/sanchitvijay',
         logo: 'simple-icons:codechef'
     },
@@ -57,23 +52,14 @@ const codingRating = [
 
 const certificates = [
     {
-        name: 'Postman API Fundamentals',
-        org: 'Postman',
-        link: 'https://badgr.com/public/assertions/n54xrS8kQw-LQWjmnrLxDw',
+        name: 'ICPC Amritapuri Regionalist 2024',
+        org: 'ICPC',
+        link: 'https://www.dropbox.com/scl/fi/gfrunx0ac1b75a574p9gr/2025-ICPC-Asia-Amritapuri-Multisite-RC-2024-Sanchit-Vijay-PLACE.pdf?rlkey=g0vp92xpkryw8dwxjk69wg5ms&e=1&st=3qix8t5e&dl=0'
     },
     {
-        name: 'Data Structure Algorithm',
-        org: 'Google',
-    },
-    {
-        name: 'The Complete 2024 Web Development Bootcamp',
-        org: 'Angela Yu - Udemy',
-        link: 'https://www.dropbox.com/scl/fi/6n0aa85h0vmsricqfgbnd/WebDevelopment_ByAngelaYu.jpg?rlkey=h1ptwomzhdxfeo5no8liek18u&st=3htrnc89&dl=0'
-    },
-    {
-        name: 'Python',
-        org: 'Kaggle',
-        link: 'https://www.dropbox.com/scl/fi/c6fky11n8ryr1xzw5cbb6/Sanchit-Vijay-Python.png?rlkey=nsxgj5m1w8lo222tj8336qv1s&st=v8ozufba&dl=0'
+        name: 'Hacktoberfest Contributor 2024',
+        org: 'Hacktoberfest',
+        link: 'https://www.holopin.io/@sanchiitvijay'
     },
     {
         name: 'Ultimate AWS Certified Cloud Practitioner',

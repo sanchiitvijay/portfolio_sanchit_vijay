@@ -17,7 +17,7 @@ const ExperienceModal = (props) => {
       backdrop={"blur"}
       isOpen={props?.isServicesOpen}
       onOpenChange={props?.onServicesOpenChange}
-      className="w-[360px] bg-zinc-950/90 md:w-[800px]"
+      className="w-[600px] bg-zinc-950/90 md:w-[1200px]"
       hideCloseButton
     >
       <ModalContent>
