@@ -11,7 +11,7 @@ const codingPlatforms = [
     },
     {
         name: 'Leetcode',
-        url: 'https://leetcode.com/u/sanchitvijay/',
+        url: 'https://leetcode.com/u/sanchitvijay2/',
         logo: 'simple-icons:leetcode'
     },
     {
@@ -25,21 +25,21 @@ const codingPlatforms = [
 const codingRating = [
     {
         name: 'Codechef',
-        rating: 1669,
+        rating: '1669 (3 Stars)',
         url: 'https://www.codechef.com/users/sanchitvijay',
         logo: 'simple-icons:codechef'
     },
     {
         name: 'Codeforces',
-        rating: 1403,
+        rating: '1403 (Specialist)',
         url: 'https://codeforces.com/profile/sanchiitvijay',
         logo: 'simple-icons:codeforces'
         
     },
     {
         name: 'Leetcode',
-        rating: 1634,
-        url: 'https://leetcode.com/u/sanchitvijay/',
+        rating: '1864 (Knight)',
+        url: 'https://leetcode.com/u/sanchitvijay2/',
         logo: 'simple-icons:leetcode'
     },
     {
@@ -65,6 +65,11 @@ const certificates = [
         name: 'Ultimate AWS Certified Cloud Practitioner',
         org: 'Stephane Maarek - Udemy',
         link: 'https://www.dropbox.com/scl/fi/jlmor39ev0maoddgu0le9/aws_foundation.jpg?rlkey=u6q6tkwji4gxz6hgbn1bsp0hm&st=71k1xdub&dl=0'
+    },
+    {
+        name: 'Smart India Hackathon 2024',
+        org: 'SIH',
+        link: ''
     }
 
 ]

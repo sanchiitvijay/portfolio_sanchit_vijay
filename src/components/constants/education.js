@@ -4,7 +4,7 @@ const education = [
         location: "Bangalore, India",
         degree: "Bachelor of Engineering in Computer Science",
         timeline: "2022-2026",
-        marks: "CGPA: 8.92"
+        marks: "CGPA: 8.76"
     },
     {
         name: "Shemford Futuristic School",
