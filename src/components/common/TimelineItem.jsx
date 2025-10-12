@@ -28,12 +28,12 @@ const TimelineItem = ({
         );
       })}
       <div className="font-semibold mt-2">
-        Tech Stack:
+        <p>Tech Stack:</p>
         {tech?.map((item, index) => {
           return (
-            <p className="text-xs mt-1 text-zinc-400 md:text-sm" key={index}>
-              🔸{item}
-            </p>
+            <span className="text-xs mt-1 text-zinc-400 md:text-sm" key={index}>
+              {item} ,
+            </span>
           );
         })}
       </div>

@@ -1,10 +1,19 @@
 const experience = [
     {
+        company: "Morgan Stanley",
+        location: "Bangalore, India",
+        role: "Apprentice",
+        link: "",
+        timeline: "Aug,2025 - Ongoing",
+        desc: [],
+        tech: ["Langchain", "Langgragh", "RAG"]
+    },
+    {
         company: "HPE-CTY",
         location: "Bangalore, India",
         role: "Project Intern",
-        link: "",
-        timeline: "Feb,2025 - Ongoing",
+        link: "https://bit.ly/hpe-cpp",
+        timeline: "Feb,2025 - July,2025",
         desc: [
             "Developing a gRPC server-client app in C++ to replace SOAP for efficient VASA communication.",
             "Implementing secure HTTPS communication using x509 certificates with async request handling.",
